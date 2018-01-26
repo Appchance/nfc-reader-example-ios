@@ -22,6 +22,7 @@
 		5E5686C9201B4FDF00F0AA8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E5686CC201B4FDF00F0AA8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E5686CE201B4FDF00F0AA8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E5686D4201B4FF500F0AA8C /* NFCReaderApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NFCReaderApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		5E5686C1201B4FDF00F0AA8C /* NFCReaderApp */ = {
 			isa = PBXGroup;
 			children = (
+				5E5686D4201B4FF500F0AA8C /* NFCReaderApp.entitlements */,
 				5E5686C2201B4FDF00F0AA8C /* AppDelegate.swift */,
 				5E5686C4201B4FDF00F0AA8C /* ViewController.swift */,
 				5E5686C6201B4FDF00F0AA8C /* Main.storyboard */,
@@ -97,6 +99,11 @@
 					5E5686BE201B4FDF00F0AA8C = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.NearFieldCommunicationTagReading = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -274,6 +281,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NFCReaderApp/NFCReaderApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E2DCV8W7B9;
 				INFOPLIST_FILE = NFCReaderApp/Info.plist;
@@ -289,6 +297,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NFCReaderApp/NFCReaderApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E2DCV8W7B9;
 				INFOPLIST_FILE = NFCReaderApp/Info.plist;

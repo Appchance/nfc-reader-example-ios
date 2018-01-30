@@ -98,6 +98,10 @@ extension ViewController {
         
         return cell
     }
+}
+
+// MARK: - UITableViewDelegate
+extension ViewController {
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "NFC tag messages"

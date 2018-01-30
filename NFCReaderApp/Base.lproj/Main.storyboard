@@ -33,7 +33,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="NFC Reader" id="5JL-U3-gfw">
-                        <barButtonItem key="rightBarButtonItem" title="Scan" id="vy5-qx-fRG"/>
+                        <barButtonItem key="rightBarButtonItem" title="Scan" id="vy5-qx-fRG">
+                            <connections>
+                                <action selector="scanButtonAction:" destination="14G-jE-rhc" id="0xJ-XA-eVX"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XzD-bs-NYT" userLabel="First Responder" sceneMemberID="firstResponder"/>

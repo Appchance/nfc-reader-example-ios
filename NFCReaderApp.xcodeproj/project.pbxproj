@@ -12,6 +12,7 @@
 		5E5686C8201B4FDF00F0AA8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E5686C6201B4FDF00F0AA8C /* Main.storyboard */; };
 		5E5686CA201B4FDF00F0AA8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E5686C9201B4FDF00F0AA8C /* Assets.xcassets */; };
 		5E5686CD201B4FDF00F0AA8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E5686CB201B4FDF00F0AA8C /* LaunchScreen.storyboard */; };
+		5EDFECD12020AFA500BABD0B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDFECD02020AFA500BABD0B /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		5E5686CC201B4FDF00F0AA8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E5686CE201B4FDF00F0AA8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E5686D4201B4FF500F0AA8C /* NFCReaderApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NFCReaderApp.entitlements; sourceTree = "<group>"; };
+		5EDFECD02020AFA500BABD0B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				5E5686D4201B4FF500F0AA8C /* NFCReaderApp.entitlements */,
 				5E5686C2201B4FDF00F0AA8C /* AppDelegate.swift */,
 				5E5686C4201B4FDF00F0AA8C /* ViewController.swift */,
+				5EDFECD02020AFA500BABD0B /* TableViewCell.swift */,
 				5E5686C6201B4FDF00F0AA8C /* Main.storyboard */,
 				5E5686C9201B4FDF00F0AA8C /* Assets.xcassets */,
 				5E5686CB201B4FDF00F0AA8C /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EDFECD12020AFA500BABD0B /* TableViewCell.swift in Sources */,
 				5E5686C5201B4FDF00F0AA8C /* ViewController.swift in Sources */,
 				5E5686C3201B4FDF00F0AA8C /* AppDelegate.swift in Sources */,
 			);

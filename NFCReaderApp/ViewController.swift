@@ -54,10 +54,12 @@ extension ViewController: NFCNDEFReaderSessionDelegate {
         
         for message in messages {
             for record in message.records {
-                print("Type name format: \(record.typeNameFormat)")
-                print("Payload: \(record.payload)")
-                print("Type: \(record.type)")
-                print("Identifier: \(record.identifier)")
+                print("""
+                    TypeNameFormat - \(record.typeNameFormat)
+                    Identifier - \(record.identifier)
+                    Type - \(record.type)
+                    Payload - \(record.payload)
+                    """)
             }
         }
         
@@ -93,7 +95,7 @@ extension ViewController {
             Payload - \(record.payload)
             """
         }).reduce("", { (records, nextRecord) -> String in
-            return records + "\(nextRecord)"
+            return records.isEmpty ? "\(nextRecord)" : records + "\n\(nextRecord)"
         })
         
         return cell
